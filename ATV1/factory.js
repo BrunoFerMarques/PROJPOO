@@ -45,7 +45,7 @@ class NotificationSingleton {
 console.log("===== TESTE SINGLETON =====");
 const s1 = NotificationSingleton.getInstance();
 const s2 = NotificationSingleton.getInstance();
-console.log("Mesma instância?", s1 === s2); // true
+console.log("Mesma instância?", s1 === s2); 
 console.log("\n===== TESTE FACTORY =====");
 const n1 = NotificationFactory.criar("sms");
 n1.enviar("Teste SMS");
@@ -53,7 +53,7 @@ const n2 = NotificationFactory.criar("email");
 n2.enviar("Teste Email");
 const n3 = NotificationFactory.criar("push");
 n3.enviar("Teste Push");
-console.log("\n TESTE SERVICE (INTEGRAÇÃO) ");
+console.log("\n TESTE SINGLETON COM FACTORY ");
 s1.enviar("sms", "Mensagem via Singleton");
 s1.enviar("email", "Mensagem via Singleton");
 s1.enviar("push", "Mensagem via Singleton");
