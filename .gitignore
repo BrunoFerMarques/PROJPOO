@@ -18,3 +18,6 @@ Thumbs.db
 # IDEs
 .vscode/
 .idea/
+
+#ignorar arquivos compilados
+*.js
