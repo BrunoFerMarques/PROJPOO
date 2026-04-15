@@ -32,7 +32,7 @@ export class NotificationFactory {
       case TipoNotificacao.PUSH:
         return new PushNotification();
       case TipoNotificacao.SMS_EXTERNO:
-        return new SmsAdapter(); // 👈 Adapter aplicado
+        return new SmsAdapter(); 
       default:
         throw new Error("Tipo de notificação inválido");
     }
